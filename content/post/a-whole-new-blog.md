@@ -4,7 +4,7 @@ title: "Blogging again"
 description: "Reviving tehbilly.com as a hugo-powered blog"
 date: "2014-04-08"
 categories:
-  - "Development"
+  - "development"
 tags:
   - "golang"
   - "hugo"
@@ -28,3 +28,23 @@ Being a Father
 --------------
 
 It's pretty much the coolest thing ever sometimes.
+
+Front Matter For Fun
+--------------------
+
+This is the meta data for this post. At the top of the markdown file. Pretty damn easy. Considering adding highlight.js
+as a hugo shortcode. I'm too tired.
+
+````yaml
+---
+draft: false
+title: "Blogging again"
+description: "Reviving tehbilly.com as a hugo-powered blog"
+date: "2014-04-08"
+categories:
+  - "development"
+tags:
+  - "golang"
+  - "hugo"
+---
+````
