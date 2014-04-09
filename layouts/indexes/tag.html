@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-9">
             <div class="well well-sm">
-                <strong>Items with tag <code>{{ .Title | lower }}'</code></strong>
+                <strong>Items with tag <code>{{ .Title | lower }}</code></strong>
                 <ul class="list-unstyled">
                     {{ range .Data.Pages }}
                         {{ .Render "li" }}

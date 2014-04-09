@@ -4,29 +4,15 @@
 <div class="container">
     <div class="row">
         <div class="col-md-9">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <h2>{{ .Title }}<br> <small>{{ .Description }}</small></h2>
+            <div class="well well-sm">
+                    <h3>{{ .Title }}<br> <small>{{ .Description }}</small></h3>
                     <hr>
                     {{ .Content }}
-                </div>
             </div>
         </div>
 
         <!-- Sidebar -->
         <div class="col-md-3">
-            <div class="well well-sm">
-                <h4>{{ .Date.Format "Mon Jan 2, 2006" }}<br>
-                <small>{{ .WordCount }} words</small></h4>
-                <hr>
-                Posted in:
-                <ul class="list-unstyled">
-                {{ range .Params.categories }}
-                    <li><a href="/categories/{{ . | urlize }}">{{ . }}</a></li>
-                {{ end }}
-                </ul>
-                <!-- TODO: Add tags -->
-            </div>
             {{ template "chrome/menu.html" . }}
         </div>
     </div>
