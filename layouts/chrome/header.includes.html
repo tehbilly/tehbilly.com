@@ -1,4 +1,7 @@
-
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/font-awesome.min.css" rel="stylesheet">
+{{ if .Site.Params.devmode }} <!-- Uncompressed and unmified versions of stylesheets -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/font-awesome.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
+{{ else }} <!-- Use this for publishing. All minified CSS files concatenated together, one per line in the same order as above -->
+    <link href="/css/style.css" rel="stylesheet">
+{{ end }}

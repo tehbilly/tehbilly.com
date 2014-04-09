@@ -1,4 +1,8 @@
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+{{ if .Site.Params.devmode }} <!-- Include unminified and individual javascript files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+{{ else }} <!-- Same order as above, but concatenated and minified -->
+    <script src="/js/script.js"></script>
+{{ end }}
 </body>
 </html>

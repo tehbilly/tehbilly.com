@@ -1,5 +1,7 @@
 ---
-baseurl: "http://tehbilly.github.io/"
+baseurl: "http://tehbilly.com/"
 title: "TehBilly's Blog"
 canonifyurls: false
+params:
+  devmode: false
 ---
