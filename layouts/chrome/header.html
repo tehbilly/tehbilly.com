@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	{{ template "chrome/meta.html" . }}
+    {{ template "chrome/meta.html" . }}
 
-	<title>{{ .Title }} - tehbilly.com</title>
-	<base href="{{ .Site.BaseUrl }}">
-
-	<link rel="canonical" href="{{ .Permalink }}">
-	{{ if .RSSlink }}<link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />{{ end }}
+    <title>{{ .Title }} - tehbilly.com</title>
+    <link rel="canonical" href="{{ .Permalink }}">
     {{ template "chrome/header.includes.html" . }}
+    {{ if .RSSlink }}<link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />{{ end }}
 </head>
