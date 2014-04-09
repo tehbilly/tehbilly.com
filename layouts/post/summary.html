@@ -1,0 +1,12 @@
+<div class="well well-sm">
+    <h4>
+        <a href="{{ .Permalink }}">{{ .Title }}</a><br>
+        <small>Posted on {{ .Date.Format "Jan 2, 2006" }}</small>
+    </h4>
+    <!-- The following was the old "by SoAndSo" line. Looks pretty good, actually.
+    <!--<p class="lead">by <a href="index.php">Start Bootstrap</a></p>-->
+    <hr>
+
+    <p>{{ .Summary }}</p>
+    <a class="btn btn-primary btn-xs" href="{{ .Permalink }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
